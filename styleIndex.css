@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+    position: absolute;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+
+header h2 {
+    font-family: cursive;
+    font-size: 1.8rem;
+}
+
+.menuUp i,.menuUp img {
+    font-size: 1.5rem;
+    width: 3rem;
+}
+
+main {
+    padding: 3rem 0 4rem 0;
+}
+
+.stories {
+    display: flex;
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.357);
+    padding: 1rem;
+}
+.stories img {
+    width: 4rem;
+    border-radius: 50%;
+    padding: .2rem;
+    border: 2.5px solid rgb(40, 187, 38);
+    /* border-image: linear-gradient(to right, orange, red) 1; */
+}
+
+
+.story {
+    margin-right: 1rem;
+}
+
+.myStory {
+    margin-right: 1rem;
+    border: none;
+    position: relative;
+}
+
+.myStory i {
+    background-color: rgb(0, 117, 242);
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    /* z-index: 1; */
+}
+
+.infoUser {
+    padding: 0 .7rem;
+}
+
+.infoUser img {
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.infoUser h5 {
+    font-size: 1rem;
+    margin-left: .5rem;
+}
+
+.posts {
+    width: 100%;
+}
+.post-img img {
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.reactions {
+    font-size: 1.6rem;
+}
+
+.reactions img {
+    height: 1.8rem;
+}
+
+.description {
+    margin-left: .5rem;
+}
+.description p {
+    font-size: .8rem;
+    margin-bottom: .3rem;
+}
+
+.description img {
+    width: 1.5rem;
+    border-radius: 50%;
+}
+
+.p-img {
+    display: flex;
+    align-items: center;
+}
+
+.p-img p {
+    padding-left: .4rem;
+}
+
+#comments {
+    color: rgb(106, 104, 104);
+}
+
+#comentar {
+    color: rgb(106, 104, 104);
+    font-size: 1rem;
+}
+
+#time {
+    font-size: .7rem;
+}
+
+#time span {
+    color: rgb(106, 104, 104);
+}
+footer nav {
+    padding: .5rem 0;
+}
+.menuBottom i {
+    font-size: 2rem;
+}
+
+.menuBottom img {
+    width: 2rem;
+    border-radius: 50%;
+}

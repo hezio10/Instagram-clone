@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mb-10 {
+    margin-bottom: 1rem;
+}
+.mb-15 {
+    margin-bottom: 1.5rem;
+}
+.mb-20 {
+    margin-bottom: 2rem;
+}
+.mb-25 {
+    margin-bottom: 2.5rem;
+}
+.mb-30 {
+    margin-bottom: 3rem;
+}
+
+.mt-10 {
+    margin-top: 1rem;
+}
+.mt-15 {
+    margin-top: 1.5rem;
+}
+.mt-20 {
+    margin-top: 2rem;
+}
+.mt-25 {
+    margin-top: 2.5rem;
+}
+.mt-30 {
+    margin-top: 3rem;
+}
+
+.ta-left {
+    text-align: left;
+}
+.ta-right {
+    text-align: right;
+}
+.ta-center {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoUser {
+    display: flex;
+    align-items: center;
+    
+}
+
+.info {
+    /* width: 200px; */
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-areas: 
+    "img nome"
+    "img loc";
+    
+}
+
+.ftUser {
+    grid-area: img;
+}
+
+.nomeUser {
+    grid-area: nome;
+}
+
+.location {
+    grid-area: loc;
+    font-size: .7rem;
+    color: grey;
+}
+
+.reactions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reactions .main-reactions {
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.reaction .another-reaction  {
+    margin: .5rem;
+}
+
+.container main {
+    flex: 1;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+}
+.menuBottom {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
