@@ -1,8 +1,11 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
     width: auto;
     position: absolute;
 }
@@ -17,12 +20,12 @@ header {
     background-color: #fff;
 }
 
-header h2 {
+.logo {
     font-family: cursive;
     font-size: 1.8rem;
 }
 
-.menuUp i,.menuUp img {
+.menu i,.menu img {
     font-size: 1.5rem;
     width: 3rem;
 }
@@ -44,11 +47,6 @@ main {
     /* border-image: linear-gradient(to right, orange, red) 1; */
 }
 
-
-.story {
-    margin-right: 1rem;
-}
-
 .myStory {
     margin-right: 1rem;
     border: none;
@@ -62,7 +60,21 @@ main {
     position: absolute;
     top: 50px;
     left: 45px;
-    /* z-index: 1; */
+}
+
+.story {
+    margin-right: 1rem;
+}
+
+.posts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-img img {
+    width: 100%;
+    margin-bottom: .5rem;
 }
 
 .infoUser {
@@ -75,24 +87,53 @@ main {
 }
 
 .infoUser h5 {
+    display: flex;
+    align-items: center;
     font-size: 1rem;
     margin-left: .5rem;
+        
 }
 
-.posts {
-    width: 100%;
+.info {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-areas: 
+    "img nome"
+    "img loc"; 
 }
-.post-img img {
-    width: 100%;
-    margin-bottom: .5rem;
+
+.info img {
+    grid-area: img;
+}
+
+.info h5 {
+    grid-area: nome;
+}
+
+.info p {
+    grid-area: loc;
+    font-size: .7rem;
+    color: grey;
 }
 
 .reactions {
+    display: flex;
+    justify-content: space-between;
     font-size: 1.6rem;
 }
 
 .reactions img {
     height: 1.8rem;
+}
+
+.reactions .main-reactions {
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.reaction .another-reaction  {
+    margin: .5rem;
 }
 
 .description {
@@ -133,14 +174,48 @@ main {
 #time span {
     color: rgb(106, 104, 104);
 }
-footer nav {
-    padding: .5rem 0;
-}
-.menuBottom i {
-    font-size: 2rem;
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
 }
 
-.menuBottom img {
+.menuBottom {
+    display: flex;
+    justify-content: space-evenly;
+    padding: .5rem 0;
+}
+
+.menuBottom i, .menuBottom img {
+    font-size: 2rem;
     width: 2rem;
     border-radius: 50%;
+}
+
+@media (min-width: 500px){
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "footer header"
+        "footer main";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+        /* left: 0; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
 }
