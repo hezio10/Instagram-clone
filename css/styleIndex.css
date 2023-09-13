@@ -32,14 +32,17 @@ header {
 
 main {
     padding: 3rem 0 4rem 0;
-    margin:0 auto;
+    margin: auto;
 }
 
 .stories {
     display: flex;
+    justify-content: center;
     border-bottom: .1rem solid rgba(0, 0, 0, 0.357);
     padding: 1rem;
-    width: 35rem;
+    /* width: 35rem; */
+    width: 90%;
+    margin: 1rem auto;
 }
 .stories img {
     width: 4rem;
@@ -69,14 +72,16 @@ main {
 }
 
 .post {
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     /* margin-bottom: 1.5rem; */
+    margin: 1rem auto;
+    /* padding-left: 1rem; */
 }
 
 .post-img img {
-    width: 100%;
+    width: 90%;
     margin-bottom: .5rem;
 }
 
@@ -123,6 +128,7 @@ main {
     display: flex;
     justify-content: space-between;
     font-size: 1.6rem;
+    width: 90%;
 }
 
 .reactions img {
