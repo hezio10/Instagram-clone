@@ -266,3 +266,7 @@ footer {
         margin-top: 50%;
     }   
 }
+
+.main-reactions .bi-heart-fill {
+    color: red;
+}
